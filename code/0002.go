@@ -1,3 +1,5 @@
+package code
+
 /*
  * Definition for singly-linked list.
  * type ListNode struct {
@@ -5,13 +7,6 @@
  *     Next *ListNode
  * }
  */
-
-package main
-
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
 
 func EndInsert(val int, head *ListNode) *ListNode {
 	node := &ListNode{

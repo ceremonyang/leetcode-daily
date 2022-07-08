@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package code
 
 // stupid
 func runningSum(nums []int) []int {
@@ -26,9 +24,4 @@ func runningSum2(nums []int) []int {
 	}
 	return nums
 
-}
-
-func main() {
-	var nums = []int{1, 2, 3, 4}
-	fmt.Println(runningSum2(nums))
 }

@@ -1,4 +1,4 @@
-package main
+package code
 
 import "fmt"
 
@@ -37,11 +37,4 @@ func convert(s string, numRows int) string {
 		i++
 	}
 	return res
-}
-
-func main() {
-	s := "AB"
-	numRows := 2
-	fmt.Println(convert(s, numRows))
-
 }

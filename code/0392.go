@@ -1,4 +1,4 @@
-package main
+package code
 
 func isSubsequence(s string, t string) bool {
 	i, j := 0, 0
@@ -18,5 +18,3 @@ func isSubsequence(s string, t string) bool {
 	}
 	return false
 }
-
-func main() {}

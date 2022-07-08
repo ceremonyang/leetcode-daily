@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package code
 
 func maxArea(height []int) int {
 	s := 0
@@ -23,9 +21,4 @@ func maxArea(height []int) int {
 		}
 	}
 	return max
-}
-
-func main() {
-	height := []int{1, 2, 3, 4, 5, 6, 7}
-	fmt.Println(maxArea(height))
 }

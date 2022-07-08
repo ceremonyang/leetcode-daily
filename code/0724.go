@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package code
 
 func pivotIndex(nums []int) int {
 	for i := 0; i < len(nums); i++ {
@@ -63,10 +61,4 @@ func pivotIndex3(nums []int) int {
 
 	}
 	return -1
-}
-
-func main() {
-	nums := []int{-1, -1, 0, 1, 1, 0}
-	fmt.Print(pivotIndex3(nums))
-
 }

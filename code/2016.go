@@ -1,3 +1,5 @@
+package code
+
 func maximumDifference(nums []int) int {
 	a := 0
 	diff := nums[1] - nums[0]
@@ -15,4 +17,3 @@ func maximumDifference(nums []int) int {
 	}
 	return -1
 }
-

@@ -1,3 +1,4 @@
+package code
 
 func lengthOfLongestSubstring(s string) int {
 	if len(s) == 0 {
@@ -20,4 +21,3 @@ func lengthOfLongestSubstring(s string) int {
 	}
 	return diff + 1
 }
-
