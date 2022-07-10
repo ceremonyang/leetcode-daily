@@ -1,10 +1,22 @@
 package code
 
 func reverseList(head *ListNode) *ListNode {
-	node := ListNode{}
-	if head == nil {
-		node.Next = head
+	if head == nil || head.Next == nil {
+		return head
 	}
-	reverseList(head.Next)
-	return node.Next
+	newHead := reverseList(head.Next)
+	head.Next.Next = head
+	head.Next = nil
+	return newHead
+}
+
+func iReverseList(head *ListNode) *ListNode {
+	var node *ListNode
+	for head != nil {
+		next := head.Next
+		head.Next = node
+		node = head
+		head = next
+	}
+	return node
 }

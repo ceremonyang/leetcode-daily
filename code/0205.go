@@ -13,8 +13,5 @@ func isIsomorphic(s string, t string) bool {
 			n[t[i]] = s[i]
 		}
 	}
-	if len(m) != len(n) {
-		return false
-	}
-	return true
+	return len(m) == len(n)
 }
